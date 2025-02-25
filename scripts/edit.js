@@ -31,7 +31,7 @@ async function updateSong(){
         genre: document.querySelector("#genre").value ? document.querySelector("#genre").value.split(",") : []
     }
 
-    const response = await fetch("https://fancy-extreme-atmosphere.glitch.me/api/songs" + songID,{
+    const response = await fetch("https://fancy-extreme-atmosphere.glitch.me/api/songs/" + songID,{
         method: "PUT",
         headers: {
             "Content-Type" : "application/json"
